@@ -1,11 +1,11 @@
-# netlify-cms-responsive-youtube-editor-widget
+# netlify-cms-responsive-block-widget
 
-Adds a YouTube widget to your editor allowing you to embed videos responsively with your app.
+Adds a iframe block widget to your editor allowing you to embed html contents responsively with your app.
 
 ## Installation
 
 ```
-npm install netlify-cms-responsive-youtube-editor-widget
+npm install --save https://github.com/javascript603/netlify-cms-responsive-block-widget.git
 ```
 
 ## Usage
@@ -14,9 +14,9 @@ Within your `cms.js` file:
 
 ```js
 import CMS from 'netlify-cms';
-import ResponsiveYouTubeEditorWidget from 'netlify-cms-responsive-youtube-editor-widget';
+import ResponsiveIframeBlockEditorWidget from 'netlify-cms-responsive-block-widget';
 
-CMS.registerEditorComponent(ResponsiveYouTubeEditorWidget);
+CMS.registerEditorComponent(ResponsiveIframeBlockEditorWidget);
 ```
 
 If you're using Gatsby you need to direct Netlify CMS to your `cms.js` file like this:
