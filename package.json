@@ -1,0 +1,41 @@
+{
+  "_from": "netlify-cms-responsive-block-widget",
+  "_id": "netlify-cms-responsive-block-widget1.0.0",
+  "_inBundle": false,
+  "_location": "/netlify-cms-responsive-block-widget",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "netlify-cms-responsive-block-widget",
+    "name": "netlify-cms-responsive-block-widget",
+    "escapedName": "netlify-cms-responsive-block-widget",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_spec": "netlify-cms-responsive-block-widget",
+  "author": {
+    "name": "React.DEV",
+    "email": "react.dev@yahoo.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "custom iframe block to be placed into the editor.",
+  "homepage": "",
+  "keywords": [
+    "netlify-cms"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "netlify-cms-responsive-block-widget",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}
