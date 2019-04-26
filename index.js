@@ -1,16 +1,40 @@
 const block = {
-  label: 'HTML Block',
   id: 'block',
+  label: 'HTMLBlock',
+  fields: [
+    {
+      label: 'Title Icon',
+      name: 'icon',
+      widget: 'image',
+      media_library: {
+        allow_multiple: false,
+      },
+    },
+    {
+      label: 'Title Text',
+      name: 'title',
+      widget: 'string',
+    },
+    {
+      label: 'Block Content',
+      name: 'content',
+      widget: 'string'
+    },
+  ],
+  pattern: /^< IframeBlock icon="(\S+)" title="(\S+)" content="(\S+)" >$/,
 
-  fromBlock: match =>
-    match && {
-      icon: match[1],
-      title: match[2],
-      content: match[3],
+  fromBlock: (match) => {
+    return (
+      match && {
+        icon: match[1],
+        title: match[2],
+        content: match[3],
+      }
+    )
   },
 
   toBlock: ({ icon, title, content }) => {
-    return `<IframeBlock icon="${icon || ''}" title="${title || 'undefined'}" content="${content || ''}" >`;
+    return `< IframeBlock icon="${icon || ''}" title="${title || 'undefined'}" content="${content || ''}" >`;
   },
   
   // eslint-disable-next-line react/display-name
@@ -43,29 +67,6 @@ const block = {
           </div>
       </div>
   `),
-
-  pattern: /^<IframeBlock icon="(\S+)" title="(\S+)" content="(\S+)" >$/,
-  
-  fields: [
-    {
-      label: 'Title Icon',
-      name: 'icon',
-      widget: 'image',
-      media_library: {
-        allow_multiple: false,
-      },
-    },
-    {
-      label: 'Title Text',
-      name: 'title',
-      widget: 'string',
-    },
-    {
-      label: 'Block Content',
-      name: 'content',
-      widget: 'string'
-    },
-  ],
 };
 
 export default block;
