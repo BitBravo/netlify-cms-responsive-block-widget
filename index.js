@@ -1,3 +1,4 @@
+const regex = "[a-zA-Z\\s0-9:!@#\$%\/\^\&*\)\(+=._-]+";
 const block = {
   id: 'block',
   label: 'HTMLBlock',
@@ -21,9 +22,12 @@ const block = {
       widget: 'string'
     },
   ],
-  pattern: /^< IframeBlock icon="(\S+)" title="(\S+)" content="(\S+)" >$/,
+  // pattern: /^< IframeBlock icon="(\S+)" title="(\S+)" content="(\S+)" >$/,
+  pattern: new RegExp(`^< IframeBlock icon="(${regex})" title="(${regex})" content="(${regex})" >$`),
+
 
   fromBlock: (match) => {
+    console.log(match)
     return (
       match && {
         icon: match[1],
