@@ -26,16 +26,16 @@
   "bundleDependencies": false,
   "deprecated": false,
   "description": "custom iframe block to be placed into the editor.",
-  "homepage": "",
+  "homepage": "https://github.com/jsdev63/netlify-cms-responsive-block-widget/blob/master/readme.md",
+  "repository": "https://github.com/jsdev63/netlify-cms-responsive-block-widget.git",
   "keywords": [
-    "netlify-cms"
+    "netlify-cms", "iframe-widget", "markdown"
   ],
   "license": "MIT",
   "main": "index.js",
   "name": "netlify-cms-responsive-block-widget",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
