@@ -5,7 +5,7 @@ Adds a iframe block widget to your editor allowing you to embed html contents re
 ## Installation
 
 ```
-npm install --save https://github.com/javascript603/netlify-cms-responsive-block-widget.git
+npm install --save https://github.com/jsdev63/netlify-cms-responsive-block-widget.git
 or
 npm install --save netlify-cms-responsive-block-widget
 ```
