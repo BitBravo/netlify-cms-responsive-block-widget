@@ -1,6 +1,6 @@
 # Netlify-CMS-Responsive-Iframe-Widget
 
-Adds a iframe widget to your editor allowing you to embed HTML contents, Youtube Video, Vimemo, and Images responsibly.
+Adds a iframe widget to your editor allowing you to embed HTML contents, Youtube Video, Vimeo Video, and Images responsibly.
 
 ## Installation
 
