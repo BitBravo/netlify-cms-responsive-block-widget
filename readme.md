@@ -1,13 +1,15 @@
-# netlify-cms-responsive-block-widget
+# Netlify-CMS-Responsive-Iframe-Widget
 
-Adds a iframe block widget to your editor allowing you to embed html contents responsively with your app.
+Adds a iframe widget to your editor allowing you to embed HTML contents, Youtube Video, Vimemo, and Images responsibly.
 
 ## Installation
 
 ```
-npm install --save https://github.com/jsdev63/netlify-cms-iframe-block-widget.git
+
+npm install --save https://github.com/jsdev63/netlify-cms-responsive-block-widget.git
 or
 npm install --save netlify-cms-responsive-block-widget
+
 ```
 
 ## Usage
